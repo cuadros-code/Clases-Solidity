@@ -16,3 +16,9 @@ contract Clase {
     }
     
 }
+
+// Arreglos estáticos (n = cantidad de elementos)
+// <type>[n] <visibility> <name>;
+
+// Arreglos dinámicos
+// <type>[] <visibility> <name>;

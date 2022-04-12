@@ -2,10 +2,13 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
-contract EstructuraDeControl {
+contract Eventos {
     
     uint[] public numeros;
     string public resultado;
+    
+    // Notificar al exterior 
+    event NotificacionDeCondicion(bool condicion);
     
     constructor(bool condicion) {
         if (condicion) {
@@ -14,6 +17,8 @@ contract EstructuraDeControl {
         else {
             resultado = "Condicion False";
         }
+        
+        emit NotificacionDeCondicion(condicion);
         
         for (uint iterador = 0; iterador < 10; iterador++) {
             numeros.push(iterador);

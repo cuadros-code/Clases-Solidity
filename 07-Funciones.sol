@@ -14,6 +14,7 @@ contract Funciones {
     
     uint private resultado;
     
+    // Solo lectura
     function ObtenerResultado() public view returns (uint) {
         return resultado;
     }
