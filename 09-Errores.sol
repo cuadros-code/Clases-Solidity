@@ -15,6 +15,7 @@ contract Errores {
     }
     
     modifier EsOwner() {
+        // Que se cumpla
         require(msg.sender == owner, "El usuario no es el creador del contrato");
         _;
     }
