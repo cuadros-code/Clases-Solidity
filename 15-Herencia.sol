@@ -7,6 +7,7 @@ import "./08-Modificadores.sol";
 
 contract Herencia is Suma, Modificadores {
     
+    // Enviar al contructor de la clase padre(Modificadores)
     constructor(string memory nombreNuevo) Modificadores(nombreNuevo) {
         
     }
